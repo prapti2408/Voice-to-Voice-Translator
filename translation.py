@@ -33,7 +33,7 @@ def voice_to_voice(audio_file, selected_languages):
     return detected_audio_paths  # Return paths to the audio files
 
 def audio_transcription(audio_file):
-    aai.settings.api_key = "a5940d1583ba4fc79894f5486dde50dc"
+    aai.settings.api_key = "YOUR API KEY"
     transcriber = aai.Transcriber()
     transcript = transcriber.transcribe(audio_file)
     return transcript
@@ -52,7 +52,7 @@ def text_translation(text: str, source_language: str, selected_languages):
 
 def text_to_speech(text: str) -> str:
     client = ElevenLabs(
-        api_key="sk_8728b069ec00635804ea0bf3f48331390dbe0d26a0c79871",
+        api_key="YOUR API KEY",
     )
 
     # Calling the text_to_speech conversion API with detailed parameters
